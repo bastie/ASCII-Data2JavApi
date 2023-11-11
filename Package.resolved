@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bastie/JavApi4Swift.git",
       "state" : {
-        "revision" : "579c7bb1b374dc12dc36bf16dfdebb2c25f6ed8a",
-        "version" : "0.4.2"
+        "revision" : "5f7c12e9e18f75bcffa67514eb27cb9e6f6bd3bc",
+        "version" : "0.5.0"
       }
     }
   ],
