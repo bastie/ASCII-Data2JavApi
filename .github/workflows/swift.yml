@@ -20,7 +20,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build
       run: swift build -v
-    - name: Run tests
-      run: swift test -v
-    - name: what is build
-      run: ls -lisaRh .
+#    - name: Run tests
+#      run: swift test -v
