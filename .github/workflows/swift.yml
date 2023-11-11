@@ -22,4 +22,5 @@ jobs:
       run: swift build -v
     - name: Run tests
       run: swift test -v
+    - name: what is build
       run: ls -lisaRh .
