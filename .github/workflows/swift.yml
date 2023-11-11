@@ -20,5 +20,8 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build
       run: swift build -v
-#    - name: Run tests
-#      run: swift test -v
+    - name: Lint
+      run: swiftlint      
+    - name: Run tests
+      env: FASTLANE_EXPLICIT_OPEN_SIMULATOR: "2"
+      run: swift test -v
