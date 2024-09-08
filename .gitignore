@@ -1,4 +1,6 @@
 # Swift
 .build
 .swiftpm
+Package.resolved
 
+#EOF
