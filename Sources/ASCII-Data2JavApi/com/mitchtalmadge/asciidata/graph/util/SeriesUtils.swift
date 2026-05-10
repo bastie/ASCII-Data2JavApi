@@ -15,7 +15,7 @@ extension com.mitchtalmadge.asciidata.graph.util {
      */
     public static func getMinAndMaxValues(_ series : [Double]) throws -> [Double]{
       guard !series.isEmpty else {
-        throw Throwable.IllegalArgumentException("The series must have at least one value.");
+        throw IllegalArgumentException("The series must have at least one value.");
       }
       
       // Initialize results with the largest value in the minimum spot, and smallest value in the maximum spot.

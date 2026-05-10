@@ -44,7 +44,7 @@ extension com.mitchtalmadge.asciidata.table {
     public static func fromData(_ headers : [String], _ data : [[String]] = [[String]]()) throws -> ASCIITable {
       // Ensure we have headers.
       guard headers.length != 0 else {
-        throw Throwable.IllegalArgumentException("No headers were supplied.");
+        throw IllegalArgumentException("No headers were supplied.");
       }
       // Create an ASCIITable instance.
       return try ASCIITable(headers, data);
@@ -71,7 +71,7 @@ extension com.mitchtalmadge.asciidata.table {
         
         // Make sure we have enough columns.
         if (rowData.count != columnsCount) {
-          throw Throwable.IllegalArgumentException("The number of columns in row \(row - 1)  (\(rowData.length)) do not match the number of headers (\(columnsCount))");
+          throw IllegalArgumentException("The number of columns in row \(row - 1)  (\(rowData.length)) do not match the number of headers (\(columnsCount))");
         }
         
         // Iterate over each column in the row to get its width, and compare it to the maximum.
